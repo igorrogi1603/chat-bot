@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Materializecss-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--CSS LOCAL-->
+    <link rel="stylesheet" href="./css/chatBot.css">
+    <link rel="stylesheet" href="./css/botaoFlutuante.css">
+
+    <title>Chat Bot</title>
+  </head>
+  <body>
+
+  	<!--Botao Flutuante-->
+  	<div class="fixed-action-btn click-to-toggle">
+      <a class="btn-floating btn-large btn-danger">
+        <i class="material-icons">email</i>
+      </a>         
+      <ul>
+          <li><a class="btn-floating btn-danger" onclick="abrirChatBot();" data-toggle="tooltip" data-placement="left" title="Assistente Virtual"><i class="material-icons">face</i></a></li>
+          <li>
+            <a class="btn-floating btn-success" href="#" target="_blank"data-toggle="tooltip" data-placement="left" title="WhatsApp">
+              <i class="material-icons">add</i>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <!--Fim Botao Flutuante-->
+
+  	<!--Chat Bot-->
+    <div class="chat-bot escondido" id="chat-bot">
+      
+      <div class="row header">
+        <div class="col-10">
+          <span class="titulo"><i class="material-icons">face</i> Assistente Virtual</span>
+        </div>
+
+        <div class="col-2">
+          <i onclick="fecharChatBot();" class="material-icons fechar">close</i>
+        </div>
+      </div>
+
+      <div class="res-container" id="id-res-container">
+        <!--Onde vai a conversa-->
+      </div>
+
+      <div class="row escrevendo">
+        <div class="col-12">
+          <span class="escondido" id="bot-escrevendo">O bot está escrevendo...</span>
+        </div>
+      </div>
+
+      <div class="row input-chat">
+        <div class="col-10">
+          <input 
+            type="text" 
+            onkeydown="if(event.keyCode == 13) 
+              document.getElementById('button-chat-bot').click();" 
+            class="form-control" id="input-chat-bot" placeholder="Digite Aqui" 
+          />
+        </div>
+        <div class="col-2">
+          <button class="btn btn-danger" id="button-chat-bot" onclick="interagirChatBot();">
+            <i class="material-icons">send</i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <!--Fim Chat Bot-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--SCRIPT LOCAL-->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/chatBot.js"></script>
+    <script src="./js/botaoFlutuante.js"></script>
+  </body>
+</html>
