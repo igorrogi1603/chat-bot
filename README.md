@@ -1,5 +1,4 @@
 <h1>Chat Bot Simplificado</h1>
-<hr>
 
 <h2>Tecnologias Usadas</h2>
 <ul>
