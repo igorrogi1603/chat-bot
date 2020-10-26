@@ -13,10 +13,10 @@
 
 <h2>Resumo</h2>
 
-<p>Esse chat foi criado para oferecer comunicação rapida de pequeno porte como exemplo, onde o usuário apenas digita um número para lhe retornar um link ou uma explicação simples do que deseja. Para quem quer algo bem simples para colocar no site, é uma boa funcionalidade.</p>
+<p>Esse chat foi criado para oferecer comunicação rapida de pequeno porte como o exemplo, onde o usuário apenas digita um número para lhe retornar um link ou uma explicação simples do que deseja. Para quem quer algo bem simples para colocar no site, é uma boa funcionalidade.</p>
 
 <h2>Aplicado</h2>
 <p>Esse chat foi aplicado no site: <a href="https://novatectelecom.net.br/">Novatec Telecom</a></p>
 
 <h2>A mais</h2>
-<p>Fora o chat simplificado, no código vem junto um botao flutuante para os sites podendo acrescentar mais opções na lista de botões.</p>
+<p>Fora o chat simplificado, no código vem junto um botao flutuante para os sites, podendo acrescentar mais opções na lista de botões.</p>
